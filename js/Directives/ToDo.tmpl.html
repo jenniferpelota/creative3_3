@@ -1,0 +1,10 @@
+<div class="todo">
+  <div class="todo__info">
+    <p class="todo__list-date"> {{ todo.message.date | date: 'dd/MM/yyyy' }} </p>
+    <p class="todo__list-subject"> {{ todo.message.subject }} </p>
+    <a ng-href="index.html#/list" class="todo__back">
+      Back
+    </a>
+  </div>
+  <div class="list__content" ng-bind-html="todo.message.content"></div>
+</div>
